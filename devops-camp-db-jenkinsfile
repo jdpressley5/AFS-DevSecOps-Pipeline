@@ -26,7 +26,6 @@ pipeline {
             }
         }
         stage('DB changes: true') {
-        echo "DB Changes True"
             when {
                 environment name: 'BUILD_DB', value: 'true'
            }
