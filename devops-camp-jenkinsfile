@@ -58,11 +58,6 @@ pipeline {
 				}
 			}
 		}
-		stage('Test'){
-			steps {
-				echo "Testing stage"
-			}
-		}
 		stage('Deploy App') {
 			steps {
 				echo "Deployment stage"
