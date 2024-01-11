@@ -20,7 +20,7 @@ pipeline {
 						env.COMMIT_HASH = sh(script: 'git rev-parse --short HEAD', returnStdout: true).trim()
 						}
 				}
-		}
+			}
 		}
 		stage('App Docker Build') {
 			steps {
@@ -48,7 +48,6 @@ pipeline {
 					}
 				}
 			}
-		}
 		}
 		stage('Harbor Security Scan') {
 			steps {
